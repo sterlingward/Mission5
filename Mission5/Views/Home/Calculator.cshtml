@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Golf Coaching Calculator";
+}
+
+<div class="container">
+    <h2>Golf Coaching Calculator</h2>
+    <p>Enter the number of coaching hours you would like:</p>
+    <input type="number" id="hoursInput" class="form-control" placeholder="Enter hours" />
+    <p>
+        Rate per hour:
+        <input type="text" id="rate" class="form-control" value="50" readonly />
+    </p>
+    <button id="calculateBtn" class="btn btn-primary mt-3">Calculate Total</button>
+    <p class="mt-3">Total Cost: <span id="totalOutput">$0.00</span></p>
+    <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Back to Home</a>
+</div>
+
+@section Scripts {
+    <script src="~/js/calculator.js"></script>
+}

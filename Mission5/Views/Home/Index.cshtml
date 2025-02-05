@@ -1,0 +1,29 @@
+﻿@* Views/Home/Index.cshtml *@
+@{
+    ViewData["Title"] = "Golf Hobby";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Welcome to My Golf World!</h2>
+        <p>Golf is more than just a sport to me—it’s a passion that challenges both the mind and body. There’s something special about stepping onto the course, feeling the fresh morning air, and seeing the perfectly manicured fairways stretch ahead. Every round presents a new challenge, whether it’s mastering my swing, reading the greens, or adjusting to unpredictable course conditions. The game requires patience, strategy, and precision, making every shot an opportunity to improve. No two rounds are ever the same, and that’s what keeps me coming back.</p>
+            <p>Beyond the technical aspects, I love golf because of the personal growth it fosters. It teaches resilience, focus, and the ability to stay calm under pressure. Whether I'm playing a solo round to clear my mind or enjoying a game with friends, golf provides a unique balance of competition and relaxation. It’s a sport I can enjoy for a lifetime, always striving to get better while appreciating the beauty of the game..</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <!-- Make sure you have these images in wwwroot/images -->
+        <img src="~/images/golf1.jpg" alt="Golf Course" class="img-fluid" />
+    </div>
+    <div class="col-md-6">
+        <img src="~/images/golf2.jpg" alt="Perfect Swing" class="img-fluid" />
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-12">
+        <p>If you’re interested in learning how to improve your game, check out my golf coaching sessions!</p>
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Calculator">Calculate Golf Coaching Rates</a>
+    </div>
+</div>
